@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Alata:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    font-family: 'Alata', Arial;
+}
+
+
+body{
+    background-image: url('../images/back.jpg');
+    color: #fff;
+    font-size: 12px;
+}
+
+.imglogoMain{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 135px;
+    height: 155px;
+    /* background-color: rgba(212, 212, 212, 0.924); */
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.imglogo{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 135px;
+    height: 155px;
+    /* background-color: rgba(212, 212, 212, 0.924); */
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+table {
+    min-width: 70%;
+    margin: auto;
+    text-align: center;
+    table-layout: fixed;
+}
+
+table, tr, th, td{
+    padding: 7px 7px;
+    color: white;
+    border-collapse: collapse;
+    font-size: 13px;
+    background-color: rgba(146, 97, 48, 0.35);
+}
+
+th{
+    color: yellow;
+    padding: 10px 10px;
+    font-size: 11px;
+}
+
+.item{
+    font-size: 13px;
+}
+
+.descricaoDoHam{
+    font-size: 10px;
+}
+
+#total, #totalTXT{
+    color: rgb(99, 226, 243);
+}
+
+button{
+    background-color: orange;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.btn-goBack, .goBack, .btn-avancaForm, .btn-comprarMais, #finalizarPedido, #confirmarPedido{
+    margin: 20px 10px;
+}
+
+.btn-avancaForm, #finalizarPedido, #confirmarPedido{
+    float: right;
+}
+
+#confirmarPedido{
+    position: relative;
+    bottom: 120px;
+    right: 700px;
+}
+
+form{
+    margin-left: 5%;
+}
+
+input{
+    display: block;
+    width: 45%;
+    margin: 10px 0 5px 0;
+    border: solid black;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+select{
+    /* margin-top: 5px; */
+    color: white;
+    background-color: orange;
+    border: black;
+    padding: 6px;
+    font-family: sans-serif;
+}
+
+textarea{
+    border: solid black;
+    border-radius: 6px;
+}
+
+#troco{
+    width: 33%;
+}
+
+.logoform{
+    width: 40%;
+    height: 75%;
+    background-color: #fff;
+    border-radius: 10%;
+    padding: 20px 10px;
+    position: absolute;
+    top: 80px;
+    left: 700px;
+}
+
+form{
+    /* background-color: rgba(255, 217, 0, 0.753); */
+    /* padding: 20px 10px; */
+    border-radius: 7px;
+}
+
+.msgFim{
+    padding: 10px;
+    color: #fff;
+    text-align: justify;
+}
+
+.btnFim{
+    display: flex;
+    margin: 20px auto;
+}
+
+/* Página de bebidas */
+
+
+
+#docBebidas > .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 750px;
+    margin: 10px auto;
+    grid-gap: 5px;
+    background-color: rgba(131, 87, 42, 0.65);
+    border-radius: 5px;
+    box-shadow: #fff 0 2px 5px;
+    padding-bottom: 5px;
+}
+
+#docBebidas > .container > .tituloHamburguer{
+    grid-column: 1/4;
+    margin-left: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+#docBebidas > .container > .hamburguerFoto{
+    grid-column: 1/2;
+    grid-row: 2;
+    width: 75px;
+    height: 75px;
+    justify-self: center;
+    justify-items: center;
+}
+
+#docBebidas > .container > .descricaoBebida{
+    grid-column: 2/4;
+}
+
+#docBebidas > .container, #docBebidas > .container > .tituloHamburguer{
+    color: yellow;
+}
+
+#docBebidas > hr{
+    border-color: gold;
+}
+
+#docBebidas > .container > select{
+    grid-column: 1;
+    width: 55px;
+    justify-self: center;
+    justify-items: center;
+}
+
+#docBebidas > .container > button{
+    height: 30px;
+    justify-items: center;
+    justify-self: center;
+}
+
+#docBebidas > .container > .subtotalValor{
+    display: grid;
+    position: relative;
+    /* text-align: center; */
+    /* justify-self: center;
+    justify-items: center; */
+    text-align: center;
+    margin-top: 7px;
+    
+}
+
+.descricaoBebida{
+    color: white;
+}
+
+@media(max-width: 768px){
+    input{
+    display: block;
+    width: 85%;
+    margin: 1rem 0 .5rem;
+    border: solid black;
+    border-radius: 6px;
+    padding: 2%;
+}
+
+#confirmarPedido{
+    right: 5px;
+}
+
+.logoform{
+    display: none;
+}
+
+}

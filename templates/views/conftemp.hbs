@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160209575-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-160209575-9');
+    </script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirme o item de seu pedido - Crispy's Crocante - Pedd Cardápios</title>
+    <link href="./styles/moraesnew.css" rel="stylesheet">
+</head>
+<body>
+    <a href="/"><img src="./images/logo.png" class="imglogo" alt="Crispys Crocante"></a>
+    <h2 style="margin-left: 10px; font-family: 'Bebas Neue', sans-serif; margin-top: 10px; font-size: 30px; color: #fff; font-weight: 400;">Você escolheu:</h2>
+    <p id="nomePedido"></p>
+    <img id="imagemApr" class="imgapr" alt="Visualize seu pedido">
+    <section id="molhosRecheios"></section>
+
+    <br>
+    <p id="textoMolho" style="text-align: center;color: yellow;font-family: 'Bebas Neue', sans-serif;font-size: 20px;
+    ">Molhos</p>
+    <p id="textoValor" style="color: #fff; text-align: center; margin: 10px;">Para adicionar custa R$ 2,00 cada molho</p>
+    <div class="listaMolho" id="listaMolho">
+        <!-- <label><input type="checkbox" class="checado" value="Chipotle"> <p>Chipotle</p></label> -->
+        <label><input type="checkbox" class="checado" value="Defumado"> <p>Defumado</p></label>
+        <label><input type="checkbox" class="checado" value="Mostarda e Mel"> <p>Mostarda e Mel</p></label>
+        <label><input type="checkbox" class="checado" value="Rosé"> <p>Rosé</p></label>
+        <label><input type="checkbox" class="checado" value="Barbecue"> <p>Barbecue</p></label>
+        <!-- <label><input type="checkbox" class="checado" value="Catchup com Mel"> <p>Catchup com Mel</p></label> -->
+    </div>
+
+    <section id="infoBatata" style="display: none;">
+        <p style="color: #fff; text-align: center;">Porções</p>
+        <div id="selectPortion" class="listaBtt">
+        <label><input type="radio" name="porcao" value="350g" id="portion350g" checked><p style="color: #fff;">Porção 350g - R$ 13,99</p></label>
+        <label><input type="radio" name="porcao" value="400g" id="portion400g"><p style="color: #fff;">Porção 400g - R$ 15,99</p></label>
+        </div>
+        <p style="color: #fff; text-align: center;">Sabores</p>
+        <div id="selectSabor" class="listaBtt">
+            <label><input type="radio" name="saborBtt" value="Calabresa" id="saborCal" checked><p style="color: #fff;">Calabresa</p></label>
+            <label><input type="radio" name="saborBtt" value="Charque e Cheddar" id="saborChar"><p style="color: #fff;">Charque e Cheddar</p></label>
+        </div>
+    </section>
+    <section id="secMilk" style="display: none;">
+        <p style="color: #fff; text-align: center; font-family: 'Bebas Neue', sans-serif;">Sabores</p>
+        <div id="escolheSabor" class="listaMilk">
+            <label><input type="radio" name="saborMilk" value="Morango" id="saborMorango" checked ><p style="color: #fff;">Morango</p></label>
+            <label><input type="radio" name="saborMilk" value="Milkchoresco" id="saborChoresco" ><p style="color: #fff;">Milkchoresco</p></label>
+            <label><input type="radio" name="saborMilk" value="Milkmaltine" id="saborTine"><p style="color: #fff;">Milkmaltine</p></label>
+            <label><input type="radio" name="saborMilk" value="Milktropical" id="saborTrop"><p style="color: #fff;">Milktropical</p></label>
+        </div>
+    </section>
+    <section id="secSuco" style="display: none;">
+        <p style="color: #fff; text-align: center; font-family: 'Bebas Neue', sans-serif;">Sabores</p>
+        <div id="escolheSaborSuco" class="listaSuco">
+            <label><input type="radio" name="saborMilkSuquin" value="Goiaba" id="saborGoiaba" checked ><p style="color: #fff;">Goiaba</p></label>
+            <label><input type="radio" name="saborMilkSuquin" value="Cajá" id="saborCaja" ><p style="color: #fff;">Cajá</p></label>
+            <label><input type="radio" name="saborMilkSuquin" value="Maracujá" id="saborMaracuja"><p style="color: #fff;">Maracujá</p></label>
+            <label><input type="radio" name="saborMilkSuquin" value="Manga" id="saborManga"><p style="color: #fff;">Manga</p></label>
+            <label><input type="radio" name="saborMilkSuquin" value="Tamarindo" id="saborTamarindo"><p style="color: #fff;">Tamarindo</p></label>
+            <label><input type="radio" name="saborMilkSuquin" value="Abacaxi c/ Hortelã" id="saborAbac"><p style="color: #fff;">Abacaxi c/ Hortelã</p></label>
+            <label><input type="radio" name="saborMilkSuquin" value="Pitanga" id="saborPitanga"><p style="color: #fff;">Pitanga</p></label>
+        </div>
+    </section>
+    <section id="secRolinho" style="display: none;">
+        <p style="color: #fff; text-align: center; font-family: 'Bebas Neue', sans-serif;">Sabores</p>
+        <div id="escolheSaborRolinho" class="listaRolinho">
+            <label><input type="radio" name="saborRolinn" value="Catupiry" id="saborCatupiry" checked ><p style="color: #fff;">Catupiry</p></label>
+            <label><input type="radio" name="saborRolinn" value="Camarão" id="saborCamarao" ><p style="color: #fff;">Camarão</p></label>
+        </div>
+    </section>
+    <section id="secLata" style="display: none;">
+        <p style="color:yellow; text-align: center; font-family: 'Bebas Neue', sans-serif;font-size: 20px;">Opções</p>
+        <div id="escolheSaborLata" class="listaLata">
+            <label><input type="radio" name="saborLatas" value="Coca-cola" id="saborCoca" checked ><p style="color: #fff;">Coca-cola</p></label>
+            <label><input type="radio" name="saborLatas" value="Fanta" id="saborFanta" ><p style="color: #fff;">Fanta</p></label>
+            <!-- <label><input type="radio" name="saborLatas" value="Camarão" id="saborPepsi" ><p style="color: #fff;">Pepsi</p></label> -->
+        </div>
+    </section>
+
+    <p style="margin-top: 10px; text-align: center;color: yellow;font-family: 'Bebas Neue', sans-serif;font-size: 20px;
+    ">Observação</p>
+    <textarea rows="4" cols="40" id="insereObs" placeholder="Ex: pouco sal, etc..." value=""></textarea><br>
+    <button id="confirmaInsere">Confirmar pedido</button>
+
+    <script src="scripts/conftemp.js"></script>
+</body>
+</html>

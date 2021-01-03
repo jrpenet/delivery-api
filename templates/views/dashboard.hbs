@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/dashboard.css" rel="stylesheet">
+    <title>Pedidos - {{empresa}}</title>
+</head>
+<body id="body-pd">
+<div class="l-navbar" id="navbar">
+    <nav class="nav">
+        <div>
+            <div class="nav__brand">
+                <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                <a href="/" class="nav__logo">Pedd Cardápios</a>
+            </div>
+            <div class="nav__list">
+                <a href="#" class="nav__link active">
+                    <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Início</span>
+                </a>
+                <a href="/pedidos" class="nav__link">
+                    <ion-icon name="pricetags-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Pedidos</span>
+                </a>
+                <a href="#" class="nav__link">
+                    <ion-icon name="duplicate-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Categorias</span>
+                </a>
+
+                <a href="/produtos" class="nav__link">
+                    <ion-icon name="clipboard-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Produtos</span>
+                    {{!-- <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon> --}}
+                </a>
+
+                <a href="#" class="nav__link">
+                    <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Configurações</span>
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="nav__link out">
+            <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+            <span class="nav__name">Log Out</span>
+        </a>
+    </nav>
+</div>
+{{!-- Sessoes --}}
+
+<section class="home">
+    <h1>Home</h1>
+</section>
+<section class="orders" style="display: none;">
+    <h2>Pedidos</h2>
+</section>
+<section class="categories" style="display: none;">
+    <h2>Categorias</h2>
+</section>
+
+<section class="settings" style="display: none;">
+    <h2>Configurações</h2>
+</section>
+</body>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script type="text/javascript" src="scripts/dashboard.js"></script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/dashboard.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    
+    <title>Pedidos - Crispys App</title>
+</head>
+<body id="body-pd">
+    <div class="l-navbar" id="navbar">
+    <nav class="nav">
+        <div>
+            <div class="nav__brand">
+                <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                <a href="/" class="nav__logo">Pedd Cardápios</a>
+            </div>
+            <div class="nav__list">
+                <a href="/dashboard" class="nav__link">
+                    <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Início</span>
+                </a>
+                <a href="#" class="nav__link active">
+                    <ion-icon name="pricetags-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Pedidos</span>
+                </a>
+                <a href="#" class="nav__link">
+                    <ion-icon name="duplicate-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Categorias</span>
+                </a>
+
+                <a href="/produtos" class="nav__link">
+                    <ion-icon name="clipboard-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Produtos</span>
+                </a>
+
+                <a href="#" class="nav__link">
+                    <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Configurações</span>
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="nav__link out">
+            <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+            <span class="nav__name">Log Out</span>
+        </a>
+    </nav>
+</div>
+
+
+<section class="products">
+<h2>Pedidos</h2>
+<table>
+    <caption>Pedidos</caption>
+    <thead>
+        <tr>
+            <th>CLIENTE</th>
+            <th>ENDEREÇO</th>
+            <th>PEDIDO</th>
+            <th>FONE</th>
+            <th>VALOR</th>
+            <th>HORAS</th>
+        </tr>
+    </thead>
+    <tbody id="listaPedidos"></tbody>
+</table>
+</section>
+
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script type="text/javascript" src="scripts/pedidos.js"></script>
+</body>
+</html>

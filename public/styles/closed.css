@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../images/back.jpg');
+}
+
+.imglogoMain{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 200px;
+    height: 200px;  
+}
+
+h1{
+    color: white;
+    font-family: 'Permanent Marker', serif;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-family: 'Permanent Marker', serif;
+    text-align: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    max-width: 100%;
+    margin: 7px auto;
+    color: #fff;
+    font-family: 'Permanent Marker', serif;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.mostraRede{
+    display: flex;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.mostraRede > a > img{
+    margin-left: 40px;
+}
+
+.mostraRede > a{
+    text-decoration: none;
+    color: white;
+}
+
+.mostraRede > a > span{
+    margin-left: 10px;
+    position: relative;
+    top: -14px;
+}

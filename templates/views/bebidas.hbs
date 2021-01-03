@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160209575-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-160209575-9');
+    </script>-->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./styles/moraes2.css" rel="stylesheet">
+    <title>Bebidas - {{empresa}}</title>
+</head>
+<body>
+    {{>header}}    
+    <h1 style="text-align: center; margin: 10px 10%; padding: 5px; font-family: 'Lobster', sans-serif;">Bebidas</h1>
+    <div id="docBebidas"></div>
+    <button class="goBack">Voltar</button>
+    <button class="btn-avancaForm">Próximo</button>
+    <script src="./scripts/bebidas.js"></script>
+</body>
+</html>

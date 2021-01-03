@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    align-items: center;
+    background-image: url('../images/back.jpg');
+    /* background-color: #dedede; */
+}
+
+.imglogoMain{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 165px;
+    height: 155px;
+    /* background-color: rgba(212, 212, 212, 0.924); */
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.imglogo{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 135px;
+    height: 155px;
+    /* background-color: rgba(212, 212, 212, 0.924); */
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+#intro{
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    padding: 10px 10px;
+    margin: 0 15px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+ul>li{
+    background-color: black;
+}
+
+ul>li:hover, ul > li > a:hover{
+    background-color: rgba(0, 0, 0, 0.301);
+    transition: 1s;
+}
+
+.listaCardapio{
+    border-radius: 5px;
+    margin: 5px auto;
+    /* background-color: rgba(177, 177, 177, 0.95); */
+    padding: 10px 10px;
+}
+
+.listaCardapio > img{
+    flex: 1;
+}
+
+.iconeham{
+    margin: 0 16px;
+}
+
+.bebidaIndex{
+    width: 129px;
+}
+
+.bebidaIndex > a > img{
+    margin-left: 15px;
+}
+
+.listaCardapio > a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    margin-top: 20px;
+    background-color: rgb(255, 208, 1);
+    padding: 10px 10px;
+}
+
+.mostraRede{
+    margin-top: 10px;
+    
+}
+
+.mostraRede > a{
+    text-decoration: none;
+    color: black;
+}
+
+.mostraRede > a > span{
+    margin-left: 10px;
+    position: relative;
+    top: -14px;
+}
+
+.formConfcli{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+    background-color: rgb(170, 113, 55, 0.35);
+}
+
+.confirmaForm{
+    /* margin: 0 auto; */
+    /* text-align: right; */
+    font-weight: bold;
+    margin-left: 30px;
+    color: #fff;
+}
+
+
+.secConfirma{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.formatxt, .ob{
+    margin: 10px 0;
+    /* color: yellow; */
+    color: #fff;
+}
+
+.formaDePGT{
+    background-color: white;
+    height: 30px;
+    border: solid black;
+    border-radius: 6px;
+    width: 110px;
+    margin: 5px 0;
+}
+
+.trocoInput{
+    width: 110px;
+    border: 3px solid black;
+    padding: 3px;
+    border-radius: 4px;
+} 
+
+.obsBtn{
+    display: flex;
+    width: 300px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.obsBtn > textarea{
+    width: 200px;
+    height: 80px;
+    border: solid black;
+    border-radius: 6px;
+}
+
+.obsBtn > button{
+    width: 80px;
+    margin-left: 20px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.obsBtn > button:hover{
+    color: yellow;
+    transition: 1s;
+}
+
+.naoehcli{
+    margin-top: 10px;
+    color: #fff;
+}
+
+.btn-comprarMais{
+    display: flex;
+    margin: 15px auto;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 3px;
+} 
+
+#nomeNoPreenchimento{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+    /* text-align: center; */
+}
+
+#endNoPreenchimento{
+    color: #fff;
+}
+
+#bairroNoPreenchimento{
+    color: #fff;
+}
+
+#referenciaNoPreenchimento{
+    color: #fff;
+}
+
+#foneNoPreenchimento{
+    color: #fff;
+}
+
+/*adm*/
+
+#productsList{
+    background-color:#000;
+    max-width: 800px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.listaCheckout{
+    display: grid;
+    grid-template-columns: minmax(100px, 180px) minmax(100px, 250px) 40px 80px 70px 1fr 1fr;
+    margin: 10px 0;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.editarProd{
+    text-decoration: none;
+    color: darkorange;
+    margin: 10px;
+    font-size: 12px;
+}

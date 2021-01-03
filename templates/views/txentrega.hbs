@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160209575-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-160209575-9');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./styles/moraes2.css" rel="stylesheet">
+    <title>Taxa de entrega - Crispy's Crocante</title>
+</head>
+<body>
+    {{>header}}
+
+    <h1 style="text-align: center; margin: 10px 7%; padding: 5px;">Taxa de entrega</h1>
+    <h2 style="text-align: center; margin: 10px 7%; padding: 5px;">Escolha como receber seu pedido:</h2>
+    
+    <div id="txBairro"></div>
+    
+    <script src="./scripts/txentrega.js"></script>
+</body>
+</html>

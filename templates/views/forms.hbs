@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160209575-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-160209575-9');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles/moraes2.css" rel="stylesheet">
+    <title>Formulário de entrega - Crispy's Crocante</title>
+</head>
+<body>
+
+    {{>header}}
+
+    <h1 style="font-size: 18px; text-align: center; padding: 5px; color: #fff;">Preencha os dados abaixo</h1>
+
+    <form id="preenchimento" name="formulario">
+        <input type="text" placeholder="Nome" id="nome" required="required" minlength="3" pattern="[a-z\s]+$" >
+        <input type="tel" placeholder="Celular 9xxxx-xxxx" id="celular" required="required" maxlength="12">
+        <input type="tel" placeholder="CEP" id="cep" style="width: 80px;" maxlength="9">
+
+        <div class="endnro" style="display: flex;">
+            <input type="text" placeholder="Endereço" id="endereco" required="required" style="width: 200px;">
+            <input type="tel" placeholder="Nº" id="numero" required="required" style="width: 60px;">
+        </div>
+        <input type="text" placeholder="Ponto de Referência" id="pto_referencia" value="">
+        <span style="color: #fff;">Bairro:</span><div id="bairro" style="color: #fff; padding: 3px;"></div>
+        
+        
+        <span style="color: #fff;">Forma de Pagamento</span>
+        <br>
+        <select id="pagaEM">
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="cartão de crédito">Cartão de crédito</option>
+            <option value="cartão de débito">Cartão de débito</option>
+        </select>
+        <input type="text" placeholder="Troco para R$..." id="troco">
+        <p>Observação?</p>
+        <p>Ex: Pouco molho, sem cebolas, etc etc...</p>
+        <textarea rows="8" cols="20" id="observacao" value=""></textarea>
+        <br>
+        <button type="submit" id="confirmarPedido">Confirmar Pedido</button>
+    </form>
+    <script src="./scripts/forms.js"></script>
+</body>
+</html>

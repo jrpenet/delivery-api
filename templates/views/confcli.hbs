@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160209575-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-160209575-9');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/moraesCSS.css" rel="stylesheet">
+    <title>Confirme seu cadastro - Crispy's Crocante</title>
+</head>
+<body>
+
+    <a href="/"><img src="./images/logo.png" class="imglogo" alt="Crispys Crocante"></a>
+
+    <h1 style="font-size:20px; color: #fff;text-align: center; margin-bottom: 7px;">Confirme os dados abaixo</h1>
+    <section class="formConfcli">
+        <p class="confirmaForm">Nome: </p><span id="nomeNoPreenchimento"></span>
+        <p class="confirmaForm">Endereço: </p><span class="confirmaForm" id="endNoPreenchimento"></span>
+        <p class="confirmaForm">Bairro: </p><span class="confirmaForm" id="bairroNoPreenchimento"></span>
+        <p class="confirmaForm">Ponto de Referência: </p><span class="confirmaForm" id="referenciaNoPreenchimento"></span>
+        <p class="confirmaForm">Telefone: </p><span class="confirmaForm" id="foneNoPreenchimento"></span>
+    </section>
+    <section class="secConfirma">
+        <span class="formatxt">Forma de Pagamento</span>
+            <select class="formaDePGT" id="pagaEM">
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="cartão de crédito">Cartão de crédito</option>
+            <option value="cartão de débito">Cartão de débito</option>
+            </select>
+        <input class="trocoInput" type="text" placeholder="Troco para R$..." id="troco">
+        <div class="ob">
+            <p>Observação?</p>
+            <!-- <p style="color: white;">Ex: Pouco molho, sem cebolas, etc etc...</p> -->
+        </div>
+        <div class="obsBtn">
+            <textarea class="digitaOb" rows="8" cols="20" id="observacao" value=""></textarea>   
+            <button type="submit" id="confirmarPedido" style="font-size: 9px;">Confirmar Pedido</button>
+        </div>
+        <div class="naoehcli">
+            <p>Não é <span id="nomeNoPreenchimento2"></span>?<br> <span><a style="color: yellow; text-decoration: none;" href="forms" id="mudacli">Clique aqui para corrigir algum dos dados acima</a></span></p>
+        </div>
+    </section>
+
+    <button class="btn-comprarMais" style="font-size: 15px;">Voltar</button>
+
+    <script src="./scripts/confcli.js"></script>
+</body>
+</html>

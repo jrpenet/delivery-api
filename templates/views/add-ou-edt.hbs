@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/dashboard.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    
+    <title>Cadastrar Produto - Crispys App</title>
+</head>
+<body id="body-pd">
+    <div class="l-navbar" id="navbar">
+    <nav class="nav">
+        <div>
+            <div class="nav__brand">
+                <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                <a href="/" class="nav__logo">Pedd Cardápios</a>
+            </div>
+            <div class="nav__list">
+                <a href="/dashboard" class="nav__link">
+                    <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Início</span>
+                </a>
+                <a href="#" class="nav__link">
+                    <ion-icon name="pricetags-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Pedidos</span>
+                </a>
+                <a href="#" class="nav__link">
+                    <ion-icon name="duplicate-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Categorias</span>
+                </a>
+
+                <a href="/produtos" class="nav__link active">
+                    <ion-icon name="clipboard-outline" class="nav__icon active"></ion-icon>
+                    <span class="nav__name">Produtos</span>
+                </a>
+
+                <a href="#" class="nav__link">
+                    <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Configurações</span>
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="nav__link out">
+            <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+            <span class="nav__name">Log Out</span>
+        </a>
+    </nav>
+</div>
+
+
+<section class="addProds">
+<h2 id="ttl">Adicionar Novo Produto</h2>
+<form id="prodImg" style="display: none;" action="/products/images" method="post" enctype="multipart/form-data">
+        <h3 style="color: white;">Imagem:</h3>
+        <input type="file" name="image"/>
+        <button>inserir</button>
+    </form>
+    <div style="">
+        <form id="prodFormPadrao" method="post" action="/newproduct" >
+        <input type="hidden" id="prodId" name="_id" value="">
+        <h3>Nome:</h3>
+        <input type="text" id="prodName" name="product" placeholder="Nome do produto" value="" required><br>
+        <h3>Descrição:</h3>
+        <textarea id="prodDescription" name="description" placeholder="Descrição" cols="30" rows="8" value=""></textarea><br>
+        <h3>Valor:</h3>
+        <input type="text" id="prodPrice" name="price" placeholder="Valor" value=""><br>
+        <h3>Categoria:</h3>
+        <select name="category" placeholder="Categoria"  value="">
+            <option id="prodCateg" value="">Selecione</option>
+            <option value="asinhas">Asinhas</option>
+            <option value="coxinhas">Coxinhas</option>
+            <option value="crispy">Crispys</option>
+            <option value="seafood">Crispy's do Mar</option>
+            <option value="crepes">Crepes</option>
+            <option value="acompanhamentos">Acompanhamentos</option>
+            <option value="bebidas">Bebidas</option>
+            <option value="promocoes">Promocoes</option>
+        </select><br>
+        <h3>Disponibilidade</h3>
+        <select name="active">
+            <option value="true">Ativo</option>
+            <option value="false">Não Disponível</option>
+        </select><br>
+        <button id="botaoCriar" style="margin-top: 20px;">Criar Produto</button> 
+    </form>
+    </div>
+
+    <img src="data:image/jpg;base64," alt="">
+</section>
+
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script type="text/javascript" src="scripts/add-ou-edt.js"></script>
+</body>
+</html>

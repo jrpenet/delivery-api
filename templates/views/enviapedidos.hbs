@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160209575-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-160209575-9');
+    </script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles/moraes2.css" rel="stylesheet">
+    <title>Envio de pedido - Crispys Crocante</title>
+</head>
+<body>
+
+    <a href="/"><img src="./images/logo.png" class="imglogo" alt="Crispys Crocante"></a>
+
+    <section>
+        
+        <h3 class="msgFim">Prezado(a)  
+             <span id="usuario"></span>
+        </h3>
+        <p style="text-align: center;font-weight: bold;font-family: 'Volkhov', serif; font-size: 13px;"> <br>Vamos informar à Crispy's Crocante o seu pedido?</p> <br>
+            <p style="text-align: center;font-weight: bold;font-family: 'Volkhov', serif; font-size: 13px;">Clique em <span style="color: white; background-color: green;text-transform: uppercase; font-weight: bolder;">enviar pedido</span> onde você será redirecionado para o seu <span style="font-weight: bold;">WhatsApp</span>, pedindo para agilizar o seu pedido.</p>
+            <form action="/newOrder" method="post">
+                <input type="hidden" name="costumer">
+                <input type="hidden" name="order">
+                <input type="hidden" name="price">
+                <input type="hidden" name="phone">
+                <input type="hidden" name="district">
+                <input type="hidden" name="address">
+                <input type="hidden" name="numberX">
+                <input type="hidden" name="obs">
+                <input type="hidden" name="change">
+                <input type="hidden" name="payment">
+                <input type="hidden" name="refPoint">
+                <input type="hidden" name="cep">
+                <input type="image" class="btnFim" src="./images/whatsappBTN.png" style="width: 170px; height: 70px;border: none;">
+            </form>
+            
+            <p style="text-align: center;font-weight: bold;font-family: 'Volkhov', serif; font-size: 13px;"> <br>A Crispy's Crocante agradece seu pedido!</p>
+        </section>
+    <script src="./scripts/enviapedidos.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160209575-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-160209575-9');
+    </script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./styles/moraesnew.css" rel="stylesheet">
+    <title>Cardápio - {{empresa}}</title>
+</head>
+<body>
+
+    <a href="/"><img src={{logo}} class="imglogo" alt="Crispys Crocante"></a>
+
+    <h2 style="text-align: center; font-family: 'Lobster', sans-serif; color: #fff;">Acompanhamentos</h2>
+    <section id="docTable"></section>
+    {{>controls}}
+    <script src="scripts/acomp.js"></script>
+</body>
+</html>
